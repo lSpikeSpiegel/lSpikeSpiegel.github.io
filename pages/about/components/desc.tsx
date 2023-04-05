@@ -1,4 +1,4 @@
-export default () => {
+export default function Desc() {
   return (
     <div
       className="text-40 text-thirdDark flex flex-col gap-70"

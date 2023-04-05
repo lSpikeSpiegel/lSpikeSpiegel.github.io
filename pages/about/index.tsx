@@ -24,7 +24,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Lil's Space</title>
+        <title>Lils Space</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -38,6 +38,7 @@ export default function About() {
             <div className="border-b-1 border-thirdGary w-screen center gap-200">
               {tabList.map((i, idx) => (
                 <div
+                  key={i.title}
                   onClick={() => setStep(idx)}
                   className={
                     idx === step

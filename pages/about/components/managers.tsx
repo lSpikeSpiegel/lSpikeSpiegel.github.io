@@ -1,4 +1,4 @@
-export default () => {
+export default function Managers() {
   const managers = [
     { name: '黄山', title: '创始人&CEO' },
     { name: '曾奇', title: '合伙人&CTO' },
@@ -8,7 +8,7 @@ export default () => {
   return (
     <div className="text-30 px-150 text-thirdDark flex justify-center flex-wrap gap-200">
       {managers.map((i, idx) => (
-        <div className="flex" style={{ width: '52rem' }}>
+        <div className="flex" style={{ width: '52rem' }} key={i.name}>
           <div className="center">
             <div className="w-8 h-170 bg-primary"></div>
             <img className="w-190" src={`/images/managers_${idx}.png`} alt="" />

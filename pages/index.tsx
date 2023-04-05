@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Lil's Space</title>
+        <title>Lils Space</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -89,7 +89,10 @@ export default function Home() {
           </div>
           <div className="h-350 bg-primaryWhite center gap-220">
             {dataRenderList.map((i) => (
-              <div className="text-primary text-22 center flex-col">
+              <div
+                key={i.main}
+                className="text-primary text-22 center flex-col"
+              >
                 <div className="center">
                   <div className="text-72">{i.main}</div>
                   <div className="flex flex-col justify-between">
@@ -203,7 +206,7 @@ export default function Home() {
             <div className="w-70 h-3 bg-primary flex-shrink-0"></div>
             <div className="flex-1 flex center flex-wrap">
               {newsRenderList.map((i, idx) => (
-                <div className="w-313 mx-100">
+                <div className="w-313 mx-100" key={i.title}>
                   <img
                     className="cursor-pointer w-278"
                     onClick={() => toNews(i.to)}

@@ -19,7 +19,7 @@ export default function Solution() {
   return (
     <>
       <Head>
-        <title>Lil's Space</title>
+        <title>Lils Space</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -37,7 +37,7 @@ export default function Solution() {
           </div>
           <div className="p-150 gap-200 center flex-wrap">
             {imgList.map((i) => (
-              <img style={{ width: '62.2rem' }} src={i} alt="" />
+              <img key={i} style={{ width: '62.2rem' }} src={i} alt="" />
             ))}
           </div>
         </div>
