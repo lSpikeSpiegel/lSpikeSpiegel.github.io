@@ -1,0 +1,17 @@
+@import './mixins.scss';
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ellipsis {
+  @include ellipsis(1);
+}
+.ellipsis-2 {
+  @include ellipsis(2);
+}
+.ellipsis-3 {
+  @include ellipsis(3);
+}
