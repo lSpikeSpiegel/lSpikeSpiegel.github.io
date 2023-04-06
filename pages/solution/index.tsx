@@ -20,7 +20,7 @@ export default function Solution() {
 	return (
 		<>
 			<Head>
-				<title>Lils Space</title>
+				<title>Eventec 越凡创新</title>
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1"

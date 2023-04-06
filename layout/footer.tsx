@@ -3,7 +3,7 @@ import { CDN_URL } from "@/config/global";
 
 export default function Footer() {
 	return (
-		<div className="h-screen bg-primaryWhite center flex-col">
+		<div className="h-screen bg-primaryWhite flex flex-col justify-between items-center">
 			<div className="text-30 p-10">
 				<span className="tracking-widest">联 系 我 们</span>
 			</div>
@@ -30,7 +30,7 @@ export default function Footer() {
 					<div className="w-200 group text-16 text-thirdDark center flex-col relative -mr-55">
 						<img
 							className="w-200 h-205 absolute -top-215 hidden group-hover:block "
-							src="/images/weixin_public_account.png"
+							src={CDN_URL + "img/index/weixin_public_account.png"}
 							alt=""
 						/>
 						<img
@@ -43,7 +43,7 @@ export default function Footer() {
 					<div className="w-200 group text-16 text-thirdDark center flex-col relative">
 						<img
 							className="w-200 h-205 absolute -top-215 hidden group-hover:block"
-							src="/images/weixin_consultation.png"
+							src={CDN_URL + "img/index/weixin_consultation.png"}
 							alt=""
 						/>
 						<img
@@ -56,7 +56,6 @@ export default function Footer() {
 				</div>
 			</div>
 			<img
-				className="flex-1"
 				src={CDN_URL + "img/index/footer.png"}
 				alt=""
 			/>

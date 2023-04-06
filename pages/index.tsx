@@ -55,7 +55,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Lils Space</title>
+				<title>Eventec 越凡创新</title>
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1"
@@ -103,7 +103,7 @@ export default function Home() {
 							className="w-full h-full"
 							controls
 							src={CDN_URL + "video/xd_jd.mp4"}
-							poster="/images/video_cover.jpg"
+							poster={CDN_URL + "img/index/video_cover.jpg"}
 						></video>
 					</div>
 					<div className="h-350 bg-primaryWhite center gap-220">
