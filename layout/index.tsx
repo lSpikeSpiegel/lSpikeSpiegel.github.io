@@ -16,9 +16,7 @@ export default function Layout(props: Props) {
 
 	const ckeckIsSetRem = () => {
 		if (window && window.__REM_SETTED__) {
-			setTimeout(() => {
-				setLoading(false);
-			}, 500);
+			setLoading(false);
 		} else {
 			setTimeout(() => {
 				ckeckIsSetRem();
@@ -48,6 +46,7 @@ export default function Layout(props: Props) {
 					spinning={loading}
 					tip="Loading"
 					size="large"
+					delay={100}
 				>
 					{renderPage()}
 				</Spin>

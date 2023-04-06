@@ -1,4 +1,5 @@
 import { Mail, Local } from "@icon-park/react";
+import { CDN_URL } from "@/config/global";
 
 export default function Footer() {
 	return (
@@ -34,7 +35,7 @@ export default function Footer() {
 						/>
 						<img
 							className="w-78"
-							src="/images/weixin.png"
+							src={CDN_URL + "img/index/weixin.png"}
 							alt=""
 						/>
 						<div className="mt-20"> 微信公众号</div>
@@ -47,7 +48,7 @@ export default function Footer() {
 						/>
 						<img
 							className="w-78"
-							src="/images/weixin.png"
+							src={CDN_URL + "img/index/weixin.png"}
 							alt=""
 						/>
 						<div className="mt-20"> 微信咨询</div>
@@ -55,7 +56,8 @@ export default function Footer() {
 				</div>
 			</div>
 			<img
-				src="images/footer.png"
+				className="flex-1"
+				src={CDN_URL + "img/index/footer.png"}
 				alt=""
 			/>
 		</div>

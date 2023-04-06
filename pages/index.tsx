@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "@/layout";
 import { Right } from "@icon-park/react";
+import { CDN_URL } from "@/config/global";
 export default function Home() {
 	const headOptions = [
 		{ title: "首页", path: "/", isActive: true },
@@ -69,7 +70,7 @@ export default function Home() {
 					<div className="w-full h-screen -mt-90 p-400 bg-primaryDark center">
 						<img
 							className="flex-1"
-							src="/images/home_main.png"
+							src={CDN_URL + "img/index/home_main.png"}
 							alt=""
 						/>
 					</div>
@@ -86,14 +87,14 @@ export default function Home() {
 							<p className="text-60">享递机器人</p>
 							<img
 								className="w-346 my-30"
-								src="/images/logo_bot.png"
+								src={CDN_URL + "img/index/logo_bot.png"}
 								alt=""
 							/>
 							<p className="text-40">垂直100米递送</p>
 						</div>
 						<img
 							className="flex-1"
-							src="/images/home_bot.png"
+							src={CDN_URL + "img/index/home_bot.png"}
 							alt=""
 						/>
 					</div>
@@ -101,7 +102,7 @@ export default function Home() {
 						<video
 							className="w-full h-full"
 							controls
-							src="/videos/home_video.mp4"
+							src={CDN_URL + "video/xd_jd.mp4"}
 							poster="/images/video_cover.jpg"
 						></video>
 					</div>
@@ -127,7 +128,7 @@ export default function Home() {
 							<div className="h-400 w-20 -mt-200 bg-primary"></div>
 							<img
 								style={{ width: "55.6rem" }}
-								src="/images/home_bot_2.png"
+								src={CDN_URL + "img/index/home_bot_2.png"}
 								alt=""
 							/>
 						</div>
@@ -141,7 +142,7 @@ export default function Home() {
 							</div>
 							<img
 								style={{ width: "43.6rem" }}
-								src="/images/bot_size.png"
+								src={CDN_URL + "img/index/bot_size.png"}
 								alt=""
 							/>
 						</div>
@@ -156,14 +157,14 @@ export default function Home() {
 							</div>
 							<img
 								className="-mt-30 w-261"
-								src="/images/bot_group.png"
+								src={CDN_URL + "img/index/bot_group.png"}
 								alt=""
 							/>
 						</div>
 						<div className="center">
 							<img
 								style={{ width: "55.6rem" }}
-								src="/images/bot_open.png"
+								src={CDN_URL + "img/index/bot_open.png"}
 								alt=""
 							/>
 						</div>
@@ -174,7 +175,7 @@ export default function Home() {
 						</div>
 						<div className="w-70 h-3 bg-primary flex-shrink-0"></div>
 						<img
-							src="/images/AIoT.png"
+							src={CDN_URL + "img/index/AIoT.png"}
 							alt=""
 						/>
 					</div>
@@ -186,12 +187,12 @@ export default function Home() {
 						<div className="w-full flex-1 center gap-200">
 							<img
 								style={{ width: "62.2rem" }}
-								src="/images/AIoT_solution.png"
+								src={CDN_URL + "img/index/AIoT_solution.jpg"}
 								alt=""
 							/>
 							<img
 								style={{ width: "62.2rem" }}
-								src="/images/bot_solution.png"
+								src={CDN_URL + "img/index/bot_solution.jpg"}
 								alt=""
 							/>
 						</div>
@@ -200,7 +201,7 @@ export default function Home() {
 						<div className="self-start z-10 relative">
 							<img
 								style={{ width: "98.4rem" }}
-								src="/images/bot_eg.png"
+								src={CDN_URL + "img/index/bot_eg.png"}
 								alt=""
 							/>
 							<div className="absolute text-30 center w-240 h-80 bg-primary text-white -right-120 bottom-120">
@@ -234,7 +235,7 @@ export default function Home() {
 									<img
 										className="cursor-pointer w-278"
 										onClick={() => toNews(i.to)}
-										src={`/images/news_${idx + 1}.png`}
+										src={CDN_URL + `img/index/news_${idx}.png`}
 										alt=""
 									/>
 									<div className="text-16 text-primary my-15 ellipsis">
@@ -263,7 +264,7 @@ export default function Home() {
 						<div className="flex-1 center">
 							<img
 								style={{ width: "123rem" }}
-								src="/images/partner.png"
+								src={CDN_URL + `img/index/partner.png`}
 								alt=""
 							/>
 						</div>
