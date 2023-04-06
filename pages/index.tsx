@@ -180,7 +180,7 @@ export default function Home() {
 						/>
 					</div>
 					<div className="h-screen bg-primaryWhite center flex-col">
-						<div className="text-30 p-10">
+						<div className="mt-100 text-30 p-10">
 							<span className="tracking-widest">末 端 全 场 景 覆 盖</span>
 						</div>
 						<div className="w-70 h-3 bg-primary flex-shrink-0"></div>
@@ -197,7 +197,7 @@ export default function Home() {
 							/>
 						</div>
 					</div>
-					<div className="h-screen bg-primaryWhite center flex-col relative">
+					<div className="h-screen -mt-100 bg-primaryWhite center flex-col relative">
 						<div className="self-start z-10 relative">
 							<img
 								style={{ width: "98.4rem" }}
@@ -229,7 +229,7 @@ export default function Home() {
 						<div className="flex-1 flex center flex-wrap">
 							{newsRenderList.map((i, idx) => (
 								<div
-									className="w-313 mx-100"
+									className="w-278 mx-100"
 									key={i.title}
 								>
 									<img

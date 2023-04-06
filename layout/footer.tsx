@@ -1,5 +1,6 @@
 import { Mail, Local } from "@icon-park/react";
 import { CDN_URL } from "@/config/global";
+import Link from "next/link";
 
 export default function Footer() {
 	return (
@@ -55,10 +56,19 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
-			<img
-				src={CDN_URL + "img/index/footer.png"}
-				alt=""
-			/>
+			<div>
+				<img
+					src={CDN_URL + "img/index/footer.png"}
+					alt=""
+				/>
+				<a
+					href="https://beian.miit.gov.cn/"
+					target="_blank"
+					className="bg-fourthDark w-full center text-16 text-white"
+				>
+					蜀ICP备17024395号
+				</a>
+			</div>
 		</div>
 	);
 }
